@@ -30,8 +30,9 @@ def main():
     # test a single image
     result = inference_segmentor(model, args.img)
     
-    print(type(result))
-    print(result.size())
+    #print(type(result))
+    #print(result.size())
+    
     # show the results
     show_result_pyplot(
         model,
@@ -40,6 +41,9 @@ def main():
         get_palette(args.palette),
         opacity=args.opacity,
         out_file=args.out_file)
+    
+    print(type(result))
+    print(result.size())
 
 
 if __name__ == '__main__':
