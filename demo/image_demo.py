@@ -13,9 +13,10 @@ def main():
     parser.add_argument('--out-file', default=None, help='Path to output file')
     parser.add_argument(
         '--device', default='cuda:0', help='Device used for inference')
+    #was 'cityscapes'
     parser.add_argument(
         '--palette',
-        default='cityscapes',
+        default='ade',
         help='Color palette used for segmentation map')
     parser.add_argument(
         '--opacity',
