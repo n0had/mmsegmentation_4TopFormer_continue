@@ -4,6 +4,8 @@ from argparse import ArgumentParser
 from mmseg.apis import inference_segmentor, init_segmentor, show_result_pyplot
 from mmseg.core.evaluation import get_palette
 
+import numpy as np
+
 
 def main():
     parser = ArgumentParser()
@@ -43,7 +45,9 @@ def main():
         out_file=args.out_file)
     
     print(type(result))
-    print(result.size())
+    #print(result.size())
+    arr_2 = np.array(result)
+    print(arr_2.shape)
 
 
 if __name__ == '__main__':
