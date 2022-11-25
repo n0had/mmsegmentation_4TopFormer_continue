@@ -28,6 +28,9 @@ def main():
     model = init_segmentor(args.config, args.checkpoint, device=args.device)
     # test a single image
     result = inference_segmentor(model, args.img)
+    
+    print(type(result))
+    print(result.size())
     # show the results
     show_result_pyplot(
         model,
