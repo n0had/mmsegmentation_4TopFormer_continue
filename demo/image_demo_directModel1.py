@@ -80,7 +80,7 @@ def main():
     #net = model
     model = model.eval()
 
-    palette = get_palette_cloths(4)
+    palette = get_palette_clothes(4)
     
     #img = Image.open(os.path.join(image_dir, image_name)).convert('RGB')
     img = Image.open(args.img).convert('RGB')
