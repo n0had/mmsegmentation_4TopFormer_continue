@@ -102,6 +102,8 @@ def main():
     #print(result.size())
     print(output_arr.shape)
     
+    output_img_pre = Image.fromarray(output_arr.astype('uint8'), mode='L')
+    
 def get_palette_cloths(num_cls):
     """ Returns the color map for visualizing the segmentation mask.
     Args:
