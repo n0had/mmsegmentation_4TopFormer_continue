@@ -29,11 +29,17 @@ def main():
 
     # build the model from a config file and a checkpoint file
     model = init_segmentor(args.config, args.checkpoint, device=args.device)
+    
     # test a single image
-    result = inference_segmentor(model, args.img)
+    #result = inference_segmentor(model, args.img)
+    result = inference_segmentor(model, False, args.img)
     
     #print(type(result))
     #print(result.size())
+    
+    print(type(result))
+    arr_2 = np.array(result)
+    print(arr_2.shape)
     
     # show the results
     show_result_pyplot(
