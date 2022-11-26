@@ -67,7 +67,8 @@ class LoadImage:
         return results
 
 
-def inference_segmentor(model, imgs):
+#def inference_segmentor(model, imgs):
+def inference_segmentor(model, imgs, rescale1=True):
     """Inference image(s) with the segmentor.
 
     Args:
@@ -96,10 +97,14 @@ def inference_segmentor(model, imgs):
         data = scatter(data, [device])[0]
     else:
         data['img_metas'] = [i.data[0] for i in data['img_metas']]
-
+        
+    print("\n img_metas")
+    print(data['img_metas'])####################################################################
+    print("\n")
+    
     # forward the model
     with torch.no_grad():
-        result = model(return_loss=False, rescale=True, **data)
+        result = model(return_loss=False, rescale=rescale1, **data) #result = model(return_loss=False, rescale=True, **data)
     return result
 
 
