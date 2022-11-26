@@ -31,8 +31,7 @@ def main():
     model = init_segmentor(args.config, args.checkpoint, device=args.device)
     
     # test a single image
-    #result = inference_segmentor(model, args.img)
-    result = inference_segmentor(model, False, args.img)
+    result = inference_segmentor(model, args.img) #result = inference_segmentor(model, rescale1=False, args.img) result = model(return_loss=False, rescale=False, **data)
     
     #print(type(result))
     #print(result.size())
