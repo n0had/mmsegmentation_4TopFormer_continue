@@ -39,7 +39,7 @@ model = dict(
         norm_cfg=norm_cfg,
         #init_cfg=dict(type='Pretrained', checkpoint='modelzoos/classification/topformer-B-224-75.3.pth')###################################
         #init_cfg=dict(type='Pretrained', checkpoint='/content/drive/MyDrive/tapmobileTestProj2/premade_topformer_pth_files/TopFormer-B_512x512_2x8_160k-38.3.pth')
-        init_cfg=dict(type='Pretrained', checkpoint='/content/drive/MyDrive/tapmobileTestProj2/topformer_backbone_modelzoos/TopFormer-B_512x512_2x8_160k-38.3.pth')
+        init_cfg=dict(type='Pretrained', checkpoint='/content/drive/MyDrive/tapmobileTestProj2/topformer_backbone_modelzoos/topformer-B-224-75.3.pth')
         #init_cfg=None
     ),
     decode_head=dict(
