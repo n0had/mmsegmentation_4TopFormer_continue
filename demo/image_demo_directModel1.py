@@ -94,7 +94,7 @@ def main():
         'ori_shape': (512, 512, 3), 'img_shape': (512, 512, 3), 'pad_shape': (512, 512, 3), 'scale_factor': np.array([1., 1., 1., 1.], dtype=np.float32), 'flip': False, 'flip_direction': 'horizontal', 
         'img_norm_cfg': {'mean': np.array([123.675, 116.28 , 103.53 ], dtype=np.float32), 'std': np.array([58.395, 57.12 , 57.375], dtype=np.float32), 'to_rgb': True}}]]
     
-    output_tensor = model(image_tensor.to(device),img_metas=imgmeta1)
+    output_tensor = model(image_tensor.to(device),img_metas=imgmeta1, gt_semantic_seg=0)
     '''
     output_tensor = F.log_softmax(output_tensor[0], dim=1)
     output_tensor = torch.max(output_tensor, dim=1, keepdim=True)[1]
