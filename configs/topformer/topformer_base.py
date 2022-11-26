@@ -37,8 +37,8 @@ model = dict(
         c2t_stride=model_cfgs['c2t_stride'],
         drop_path_rate=0.1,
         norm_cfg=norm_cfg,
-        init_cfg=dict(
-            type='Pretrained', checkpoint='modelzoos/classification/topformer-B-224-75.3.pth')
+        #init_cfg=dict(type='Pretrained', checkpoint='modelzoos/classification/topformer-B-224-75.3.pth')###################################
+        init_cfg=dict(type='Pretrained', checkpoint='/content/drive/MyDrive/tapmobileTestProj2/premade_topformer_pth_files/TopFormer-B_512x512_2x8_160k-38.3.pth')
     ),
     decode_head=dict(
         type='SimpleHead',
