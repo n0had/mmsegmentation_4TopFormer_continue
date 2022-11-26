@@ -17,6 +17,7 @@ import torchvision.transforms as transforms
 
 #from data.base_dataset import Normalize_image
 #from utils.saving_utils import load_checkpoint_mgpu
+from data_clothes.Normalize_image_file import Normalize_image
 
 
 def main():
