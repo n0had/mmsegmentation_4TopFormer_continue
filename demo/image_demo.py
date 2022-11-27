@@ -19,7 +19,7 @@ def main():
     parser.add_argument(
         '--palette',
         #default='ade',
-        default='iMaterialistDataset_numclasses110',
+        default='imaterialist_numclasses110',
         help='Color palette used for segmentation map')
     parser.add_argument(
         '--opacity',
