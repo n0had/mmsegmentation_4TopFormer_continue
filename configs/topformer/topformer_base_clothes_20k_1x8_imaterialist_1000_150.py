@@ -1,7 +1,7 @@
 _base_ = [
     '../_base_/datasets/imaterialist_1000_150.py',
     '../_base_/default_runtime.py', '../_base_/schedules/schedule_20k.py',
-    './topformer_base_clothes.py'
+    './topformer_base_clothes_numclasses4.py'
 ]
 
 optimizer = dict(_delete_=True, type='AdamW', lr=0.00012, betas=(0.9, 0.999), weight_decay=0.01,
