@@ -18,7 +18,8 @@ def main():
     #was 'cityscapes'
     parser.add_argument(
         '--palette',
-        default='ade',
+        #default='ade',
+        default='iMaterialistDataset_numclasses110',
         help='Color palette used for segmentation map')
     parser.add_argument(
         '--opacity',
