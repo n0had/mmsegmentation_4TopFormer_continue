@@ -265,9 +265,9 @@ class BaseSegmentor(BaseModule, metaclass=ABCMeta):
                 palette = self.PALETTE
         palette = np.array(palette)
         
-        print("\n\palette.nshape[0] ")
+        print("\n\n palette.nshape[0] \n")
         print(palette.shape[0])
-        print("\nlen(self.CLASSES) ")
+        print("\n len(self.CLASSES) \n")
         print(len(self.CLASSES))
         print("\n\n")
         
