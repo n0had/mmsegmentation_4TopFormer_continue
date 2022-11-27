@@ -42,6 +42,18 @@ def cross_entropy(pred,
 
     # class_weight is a manual rescaling weight given to each class.
     # If given, has to be a Tensor of size C element-wise losses
+    
+    print("\n\n cross_enthropy info")
+    print("\n pred")
+    print(list(pred.size()))
+    print("\n label")
+    print(list(label.size()))
+    print("\n class_weight")
+    print(class_weight)
+    print("\n ignore_index")
+    print(ignore_index)
+    print("\n\n")
+    
     loss = F.cross_entropy(
         pred,
         label,
