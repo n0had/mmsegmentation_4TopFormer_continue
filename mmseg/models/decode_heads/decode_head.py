@@ -97,7 +97,13 @@ class BaseDecodeHead(BaseModule, metaclass=ABCMeta):
                               'to convert seg_logist into a prediction'
                               'applying a threshold')
             out_channels = num_classes
-
+        
+        print("\n\n out_channels \n")
+        print(out_channels)
+        print("\n num_classes")
+        print(num_classes)
+        print("\n\n")
+        
         if out_channels != num_classes and out_channels != 1:
             raise ValueError(
                 'out_channels should be equal to num_classes,'
