@@ -54,6 +54,8 @@ def cross_entropy(pred,
     print(ignore_index)
     print("\n\n")
     
+    ignore_index = 1
+    
     loss = F.cross_entropy(
         pred,
         label,
