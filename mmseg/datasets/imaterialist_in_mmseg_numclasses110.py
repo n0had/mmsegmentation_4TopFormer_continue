@@ -21,34 +21,22 @@ class iMaterialistDataset_numclasses110(CustomDataset):
     CLASSES = ('upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
                'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
                'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
-               'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
-               'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
                #####
                'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody',
                'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody',
                'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody',
-               'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody',
-               'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody',
                #####
-               'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody',
-               'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody',
                'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody',
                'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody',
                'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody')
     PALETTE = [[128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
                [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
                [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
-               [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
-               [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
                #####
                [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], 
                [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], 
                [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], 
-               [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], 
-               [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0],
                #####
-               [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0],
-               [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0],
                [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0],
                [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0],
                [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0]]
