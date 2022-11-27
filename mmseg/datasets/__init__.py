@@ -21,6 +21,7 @@ from .stare import STAREDataset
 from .voc import PascalVOCDataset
 from .imaterialist_in_mmseg import iMaterialistDataset
 from .imaterialist_in_mmseg_1000_150 import iMaterialistDataset_1000_150
+from .imaterialist_in_mmseg_numclasses110 import iMaterialistDataset_numclasses110
 
 __all__ = [
     'CustomDataset', 'build_dataloader', 'ConcatDataset', 'RepeatDataset',
@@ -29,5 +30,5 @@ __all__ = [
     'PascalContextDataset59', 'ChaseDB1Dataset', 'DRIVEDataset', 'HRFDataset',
     'STAREDataset', 'DarkZurichDataset', 'NightDrivingDataset',
     'COCOStuffDataset', 'LoveDADataset', 'MultiImageMixDataset',
-    'iSAIDDataset', 'ISPRSDataset', 'PotsdamDataset', 'FaceOccludedDataset', 'iMaterialistDataset', 'iMaterialistDataset_1000_150'
+    'iSAIDDataset', 'ISPRSDataset', 'PotsdamDataset', 'FaceOccludedDataset', 'iMaterialistDataset', 'iMaterialistDataset_1000_150', 'iMaterialistDataset_numclasses110'
 ]
