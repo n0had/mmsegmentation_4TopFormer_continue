@@ -213,7 +213,46 @@ class BaseSegmentor(BaseModule, metaclass=ABCMeta):
             log_vars[loss_name] = loss_value.item()
 
         return loss, log_vars
+    
+    def show_result2(self,
+                    img,
+                    result,
+                    palette=None,
+                    win_name='',
+                    show=False,
+                    wait_time=0,
+                    out_file=None,
+                    opacity=0.5):
 
+        img = mmcv.imread(img)
+        img = img.copy()
+        seg = result[0]
+        if palette is None:
+            if self.PALETTE is None:
+                # Get random state before set seed,
+                # and restore random state later.
+                # It will prevent loss of randomness, as the palette
+                # may be different in each iteration if not specified.
+                # See: https://github.com/open-mmlab/mmdetection/issues/5844
+                state = np.random.get_state()
+                np.random.seed(42)
+                # random palette
+                palette = np.random.randint(
+                    0, 255, size=(len(self.CLASSES), 3))
+                np.random.set_state(state)
+            else:
+                palette = self.PALETTE
+        palette = np.array(palette)
+        
+        return [palette.shape[0], len(self.CLASSES)]   
+        '''
+        print("\n\n palette.nshape[0] \n")
+        print(palette.shape[0])
+        print("\n len(self.CLASSES) \n")
+        print(len(self.CLASSES))
+        print("\n\n")'''
+        
+    
     def show_result(self,
                     img,
                     result,
