@@ -40,6 +40,20 @@ def main():
     arr_2 = np.array(result)
     print(arr_2.shape)
     
+    list2 = show_result_pyplot2(
+        model,
+        args.img,
+        result,
+        get_palette(args.palette),
+        opacity=args.opacity,
+        out_file=args.out_file)
+    
+    print("\n\n palette.nshape[0] \n")
+    print(list2[0])
+    print("\n len(self.CLASSES) \n")
+    print(list2[1])
+    print("\n\n")
+    
     # show the results
     show_result_pyplot(
         model,
