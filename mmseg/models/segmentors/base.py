@@ -265,7 +265,7 @@ class BaseSegmentor(BaseModule, metaclass=ABCMeta):
                 palette = self.PALETTE
         palette = np.array(palette)
         
-        print("\n\n check \n\n")
+        #print("\n\n check \n\n")
         
         '''
         print("\n\n palette.nshape[0] \n")
@@ -273,6 +273,7 @@ class BaseSegmentor(BaseModule, metaclass=ABCMeta):
         print("\n len(self.CLASSES) \n")
         print(len(self.CLASSES))
         print("\n\n")'''
+        
         
         assert palette.shape[0] == len(self.CLASSES)
         assert palette.shape[1] == 3
