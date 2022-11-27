@@ -229,12 +229,37 @@ class CustomDataset(Dataset):
         ann_info = self.get_ann_info(idx)
         results = dict(img_info=img_info, ann_info=ann_info)
         
+        '''
         print("\n\n dictionary info")
         print(results)
         print("\n\n")
+        '''
+        results = self.fix_dict(results)
         
         self.pre_pipeline(results)
         return self.pipeline(results)
+    
+    def fix_dict(self, dict1):
+        dict1['img_info']['filename'] = self.fix_filename(dict1['img_info']['filename'])
+        dict1['img_info']['ann']['seg_map'] = self.fix_filename(dict1['img_info']['ann']['seg_map'])
+        dict1['ann_info']['seg_map'] = self.fix_filename(dict1['ann_info']['seg_map'])
+        return dict1
+        '''
+        print(dict1['img_info']['filename'])
+        print(dict1['img_info']['ann']['seg_map'])
+        print(dict1['ann_info']['seg_map'])
+        str1=dict1['img_info']['filename']
+        indx1 = str1.find('(') #what if there in to '('? then indx1=-1
+        print(str1[0:indx1-1]+str1[-4:])
+        '''
+
+    def fix_filename(self, filename1):
+        indx1 = filename1.find('(')
+        if (indx1<0):
+            return filename1
+        else:
+            ans1 = filename1[0:indx1-1]+filename1[-4:]
+            return ans1
 
     def prepare_test_img(self, idx):
         """Get testing data after pipeline.
@@ -249,6 +274,9 @@ class CustomDataset(Dataset):
 
         img_info = self.img_infos[idx]
         results = dict(img_info=img_info)
+        
+        #results = self.fix_dict(results)
+        
         self.pre_pipeline(results)
         return self.pipeline(results)
 
@@ -260,6 +288,9 @@ class CustomDataset(Dataset):
         """Get one ground truth segmentation map for evaluation."""
         ann_info = self.get_ann_info(index)
         results = dict(ann_info=ann_info)
+        
+        #results = self.fix_dict(results)
+        
         self.pre_pipeline(results)
         self.gt_seg_map_loader(results)
         return results['gt_semantic_seg']
