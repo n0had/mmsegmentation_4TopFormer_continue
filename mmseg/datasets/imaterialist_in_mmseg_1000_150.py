@@ -24,7 +24,7 @@ class iMaterialistDataset_1000_150(CustomDataset):
     #PALETTE = [[0, 0, 0], [128, 0, 0], [0, 128, 0], [80, 128, 0]]
 
     def __init__(self, **kwargs):
-        super(iMaterialistDataset, self).__init__(
+        super(iMaterialistDataset_1000_150, self).__init__(
             img_suffix='.jpg',
             seg_map_suffix='.png',
             reduce_zero_label=True,
