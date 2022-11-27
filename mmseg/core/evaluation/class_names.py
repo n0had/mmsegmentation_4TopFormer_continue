@@ -12,7 +12,14 @@ def cityscapes_classes():
     ]
 
 def imaterialist_numclasses110_classes():
-    return ['upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
+    return ['background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
+            'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
+            'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
+            'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
+            'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
+            'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
+            #####
+            'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
             'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
             'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
             'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
@@ -156,7 +163,14 @@ def cityscapes_palette():
             [0, 0, 230], [119, 11, 32]]
 
 def imaterialist_numclasses110_palette():
-    return [[128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
+    return [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
+            [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
+            [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
+            [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
+            [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
+            [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
+            #####
+            [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
             [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
             [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
             [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
