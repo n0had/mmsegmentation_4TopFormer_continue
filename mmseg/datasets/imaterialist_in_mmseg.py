@@ -11,16 +11,17 @@ from .custom import CustomDataset
 
 @DATASETS.register_module()
 class iMaterialistDataset(CustomDataset):
-    """ADE20K dataset.
+    """iMaterialist dataset.
     In segmentation map annotation for ADE20K, 0 stands for background, which
     is not included in 150 categories. ``reduce_zero_label`` is fixed to True.
     The ``img_suffix`` is fixed to '.jpg' and ``seg_map_suffix`` is fixed to
     '.png'.
     """
-
-    CLASSES = ('background', 'upperbody', 'lowerbody', 'wholebody')
-
-    PALETTE = [[120, 120, 120], [180, 120, 120], [6, 230, 230], [80, 50, 50]]
+    
+    CLASSES = ('upperbody', 'lowerbody', 'wholebody')
+    PALETTE = [[128, 0, 0], [0, 128, 0], [128, 128, 0]]
+    #CLASSES = ('background', 'upperbody', 'lowerbody', 'wholebody')
+    #PALETTE = [[0, 0, 0], [128, 0, 0], [0, 128, 0], [80, 128, 0]]
 
     def __init__(self, **kwargs):
         super(iMaterialistDataset, self).__init__(
