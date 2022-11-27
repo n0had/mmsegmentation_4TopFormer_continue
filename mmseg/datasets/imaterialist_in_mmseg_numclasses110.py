@@ -22,12 +22,16 @@ class iMaterialistDataset_numclasses110(CustomDataset):
                'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
                'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
                'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
+               'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody', 'upperbody',
                #####
                'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody',
                'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody',
                'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody',
                'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody',
+               'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody', 'lowerbody',
                #####
+               'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody',
+               'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody',
                'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody',
                'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody',
                'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody')
@@ -35,12 +39,16 @@ class iMaterialistDataset_numclasses110(CustomDataset):
                [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
                [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
                [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
+               [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0], [128, 0, 0],
                #####
                [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], 
                [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], 
                [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], 
                [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], 
+               [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0],
                #####
+               [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0],
+               [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0],
                [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0],
                [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0],
                [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0]]
