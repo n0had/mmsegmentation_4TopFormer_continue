@@ -10,7 +10,7 @@ from .custom import CustomDataset
 
 
 @DATASETS.register_module()
-class ADE20KDataset(CustomDataset):
+class iMaterialistDataset(CustomDataset):
     """ADE20K dataset.
     In segmentation map annotation for ADE20K, 0 stands for background, which
     is not included in 150 categories. ``reduce_zero_label`` is fixed to True.
@@ -22,7 +22,7 @@ class ADE20KDataset(CustomDataset):
     PALETTE = [[120, 120, 120], [180, 120, 120], [6, 230, 230], [80, 50, 50]]
 
     def __init__(self, **kwargs):
-        super(ADE20KDataset, self).__init__(
+        super(iMaterialistDataset, self).__init__(
             img_suffix='.jpg',
             seg_map_suffix='.png',
             reduce_zero_label=True,
