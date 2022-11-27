@@ -107,6 +107,20 @@ def inference_segmentor(model, imgs, rescale1=True):
         result = model(return_loss=False, rescale=rescale1, **data) #result = model(return_loss=False, rescale=True, **data)
     return result
 
+def show_result_pyplot2(model,
+                       img,
+                       result,
+                       palette=None,
+                       fig_size=(15, 10),
+                       opacity=0.5,
+                       title='',
+                       block=True,
+                       out_file=None):
+    
+    if hasattr(model, 'module'):
+        model = model.module
+    list2 = model.show_result2(img, result, palette=palette, show=False, opacity=opacity)
+    return list2
 
 def show_result_pyplot(model,
                        img,
