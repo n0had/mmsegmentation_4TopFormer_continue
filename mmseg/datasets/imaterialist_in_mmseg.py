@@ -17,7 +17,8 @@ class iMaterialistDataset(CustomDataset):
     The ``img_suffix`` is fixed to '.jpg' and ``seg_map_suffix`` is fixed to
     '.png'.
     """
-    CLASSES = ('wall', 'building', 'sky', 'floor')
+
+    CLASSES = ('background', 'upperbody', 'lowerbody', 'wholebody')
 
     PALETTE = [[120, 120, 120], [180, 120, 120], [6, 230, 230], [80, 50, 50]]
 
