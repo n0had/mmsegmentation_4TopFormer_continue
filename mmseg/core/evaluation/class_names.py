@@ -12,7 +12,8 @@ def cityscapes_classes():
     ]
 
 def imaterialist_numclasses110_classes():
-    return ['background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
+    return ['upperbody','lowerbody','wholebody']
+    '''return ['background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
             'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
             'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
             'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
@@ -38,7 +39,7 @@ def imaterialist_numclasses110_classes():
             'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody',
             'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody',
             'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody',
-            'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody']
+            'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody', 'wholebody']'''
     
 def ade_classes():
     """ADE20K class names for external use."""
@@ -163,7 +164,8 @@ def cityscapes_palette():
             [0, 0, 230], [119, 11, 32]]
 
 def imaterialist_numclasses110_palette():
-    return [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
+    return [[128, 0, 0], [0, 128, 0],[128, 128, 0]]
+    '''return [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
             [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
             [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
             [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
@@ -189,7 +191,7 @@ def imaterialist_numclasses110_palette():
             [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0],
             [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0],
             [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0],
-            [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0]]
+            [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0], [128, 128, 0]]'''
 
 def ade_palette():
     """ADE20K palette for external use."""
