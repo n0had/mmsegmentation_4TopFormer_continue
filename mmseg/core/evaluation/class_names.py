@@ -12,8 +12,8 @@ def cityscapes_classes():
     ]
 
 def imaterialist_numclasses110_classes():
-    return ['background','upperbody','lowerbody','wholebody']
-    #return ['upperbody','lowerbody','wholebody']
+    #return ['background','upperbody','lowerbody','wholebody']
+    return ['upperbody','lowerbody','wholebody']
     '''return ['background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
             'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
             'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background', 'background',
@@ -165,8 +165,8 @@ def cityscapes_palette():
             [0, 0, 230], [119, 11, 32]]
 
 def imaterialist_numclasses110_palette():
-    return [[0, 0, 0], [128, 0, 0], [0, 128, 0],[128, 128, 0]]
-    #return [[128, 0, 0], [0, 128, 0],[128, 128, 0]]
+    #return [[0, 0, 0], [128, 0, 0], [0, 128, 0],[128, 128, 0]]
+    return [[128, 0, 0], [0, 128, 0],[128, 128, 0]]
     '''return [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
             [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
             [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
