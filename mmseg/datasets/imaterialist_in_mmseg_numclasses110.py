@@ -77,16 +77,16 @@ class iMaterialistDataset_numclasses110(CustomDataset):
     #CLASSES = ('upperbody','upperbody','upperbody', 'lowerbody','lowerbody','lowerbody', 'wholebody', 'wholebody', 'wholebody')
     #PALETTE = [[128, 0, 0], [128, 0, 0], [128, 0, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [128, 128, 0], [128, 128, 0] , [128, 128, 0]]
     
-    CLASSES = ('upperbody', 'lowerbody', 'wholebody')
-    PALETTE = [[128, 0, 0], [0, 128, 0], [128, 128, 0]]
-    #CLASSES = ('background', 'upperbody', 'lowerbody', 'wholebody')
-    #PALETTE = [[0, 0, 0], [128, 0, 0], [0, 128, 0], [128, 128, 0]]
+    #CLASSES = ('upperbody', 'lowerbody', 'wholebody')
+    #PALETTE = [[128, 0, 0], [0, 128, 0], [128, 128, 0]]
+    CLASSES = ('background', 'upperbody', 'lowerbody', 'wholebody')
+    PALETTE = [[0, 0, 0], [128, 0, 0], [0, 128, 0], [128, 128, 0]]
 
     def __init__(self, **kwargs):
         super(iMaterialistDataset_numclasses110, self).__init__(
             img_suffix='.jpg',
             seg_map_suffix='.png',
-            reduce_zero_label=True,
+            reduce_zero_label=False,
             **kwargs)
 
     def results2img(self, results, imgfile_prefix, to_label_id, indices=None):
