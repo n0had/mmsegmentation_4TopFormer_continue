@@ -86,7 +86,7 @@ class iMaterialistDataset_numclasses110(CustomDataset):
         super(iMaterialistDataset_numclasses110, self).__init__(
             img_suffix='.jpg',
             seg_map_suffix='.png',
-            reduce_zero_label=False,
+            reduce_zero_label=True,
             **kwargs)
 
     def results2img(self, results, imgfile_prefix, to_label_id, indices=None):
