@@ -77,10 +77,10 @@ class iMaterialistDataset_numclasses110(CustomDataset):
     #CLASSES = ('upperbody','upperbody','upperbody', 'lowerbody','lowerbody','lowerbody', 'wholebody', 'wholebody', 'wholebody')
     #PALETTE = [[128, 0, 0], [128, 0, 0], [128, 0, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [128, 128, 0], [128, 128, 0] , [128, 128, 0]]
     
-    #CLASSES = ('upperbody', 'lowerbody', 'wholebody')
-    #PALETTE = [[128, 0, 0], [0, 128, 0], [80, 128, 0]]
-    CLASSES = ('background', 'upperbody', 'lowerbody', 'wholebody')
-    PALETTE = [[0, 0, 0], [128, 0, 0], [0, 128, 0], [128, 128, 0]]
+    CLASSES = ('upperbody', 'lowerbody', 'wholebody')
+    PALETTE = [[128, 0, 0], [0, 128, 0], [80, 128, 0]]
+    #CLASSES = ('background', 'upperbody', 'lowerbody', 'wholebody')
+    #PALETTE = [[0, 0, 0], [128, 0, 0], [0, 128, 0], [128, 128, 0]]
 
     def __init__(self, **kwargs):
         super(iMaterialistDataset_numclasses110, self).__init__(
