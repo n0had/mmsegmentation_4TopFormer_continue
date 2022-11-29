@@ -78,7 +78,7 @@ class iMaterialistDataset_numclasses110(CustomDataset):
     #PALETTE = [[128, 0, 0], [128, 0, 0], [128, 0, 0], [0, 128, 0], [0, 128, 0], [0, 128, 0], [128, 128, 0], [128, 128, 0] , [128, 128, 0]]
     
     CLASSES = ('upperbody', 'lowerbody', 'wholebody')
-    PALETTE = [[128, 0, 0], [0, 128, 0], [80, 128, 0]]
+    PALETTE = [[128, 0, 0], [0, 128, 0], [128, 128, 0]]
     #CLASSES = ('background', 'upperbody', 'lowerbody', 'wholebody')
     #PALETTE = [[0, 0, 0], [128, 0, 0], [0, 128, 0], [128, 128, 0]]
 
